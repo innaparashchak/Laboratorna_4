@@ -1,0 +1,22 @@
+"""
+Знайти значення y, якщо:
+y = 1, якщо a < b < c,
+y = 2, якщо a = b = c,
+y = 3, якщо b < a < c,
+y = 4, якщо c < a < b,
+y = 0, в інших випадках.
+"""
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+if a < b < c:
+    y = 1
+elif a == b == c:
+    y = 2
+elif b < a < c:
+    y = 3
+elif c < a < b:
+    y = 4
+else:
+    y = 0
+print("y = {0}".format(y))
