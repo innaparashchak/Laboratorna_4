@@ -1,0 +1,9 @@
+"""
+Обчислити площу трикутника, якщо трикутник задано двома сторонами та кутом між ними.
+"""
+import math
+x = float(input(" 1-а сторона: "))
+y = float(input(" 2-а сторона: "))
+a = float(input("Кут між заданими сторонами: "))
+S = 0.5 * x * y * math.sin(math.radians(a))
+print("Square = {0:.1f}".format(S))
