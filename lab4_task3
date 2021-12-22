@@ -1,0 +1,18 @@
+"""
+Трикутник задається координатами своїх вершин на площині: А(x1,y1), B(x2,y2), C(x3,y3).
+Визначити, чи є цей трикутник тупокутним.
+"""
+from math import sqrt
+x1 = float(input("х1: "))
+y1 = float(input("y1: "))
+x2 = float(input("х2: "))
+y2 = float(input("y2: "))
+x3 = float(input("х3: "))
+y3 = float(input("y3: "))
+AB = sqrt((x2-x1)**2 + (y2-y1)**2)
+BC = sqrt((x3-x2)**2 + (y3-y2)**2)
+AC = sqrt((x3-x1)**2 + (y3-y1)**2)
+if AB**2 > BC**2 + AC**2 or BC**2 > AC**2 + AB**2 or AC**2 > AB**2 + BC**2:
+ print("Трикутник тупокутний.")
+else:
+ print("Трикутник не тупокутний.")
