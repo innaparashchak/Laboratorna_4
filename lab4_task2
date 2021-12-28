@@ -1,0 +1,13 @@
+"""
+Дано цілі числа a, b, c є Z. Визначити, чи належить a множині Z = {3, 4, 5, ..., 9} i {b, b+1, b+2, ..., c}
+"""
+a = int(input("a = "))
+b = int(input("b = "))
+c = int(input("c = "))
+X = {x for x in range(3, 10)}
+Y = {x for x in range(b, c+1)}
+Z = X|Y
+if a in Z:
+    print('Так, елемент а належить множині Z.')
+else:
+    print('Ні, елемент а не належить множині Z.')
